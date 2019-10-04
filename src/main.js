@@ -4,15 +4,14 @@ import vuetify from './plugins/vuetify'
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import '@mdi/font/css/materialdesignicons.css'
 import router from "./router"
-
-import '@fortawesome/fontawesome-free/css/all.css'
+import store from "./store"
+import { sync } from 'vuex-router-sync'
 
 //add axios
 import axios from "axios"
 import VueAxios from "vue-axios"
 
-//add store vuex
-import { store } from "./store"
+sync(store, router)
 
 Vue.use(VueAxios, axios);
 

@@ -1,9 +1,13 @@
 <template>
 <v-app>
     <v-app-bar app>
+        <v-btn
+            text
+        >
         <v-toolbar-title class="headline text-uppercase">
             <span>Bobview</span>
         </v-toolbar-title>
+        </v-btn>
         <v-spacer></v-spacer>
         <v-btn
             depressed

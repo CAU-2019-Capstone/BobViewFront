@@ -31,12 +31,6 @@ export default new VueRouter({
                     component: () =>
                         import ( /* webpackChunkName: "demo" */ "./views/Register.vue")
                 },
-                {
-                    path: "/hello",
-                    name: "hello",
-                    component: () =>
-                        import ( /* webpackChunkName: "demo" */ "./components/HelloWorld.vue")
-                },
             ]
         },
         {

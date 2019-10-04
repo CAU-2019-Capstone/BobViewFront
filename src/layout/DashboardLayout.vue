@@ -1,21 +1,22 @@
 <template>
-    <div>
-        <div>
-            <p>dashboard layout</p>
-        </div>
-        <div>
-            <router-view></router-view>
-        </div>
-        
-    </div>
+  <v-app>
+    <core-app-bar />
+
+    <core-drawer />
+
+    <core-view />
+
+    <core-footer />
+  </v-app>
 </template>
 
 <script>
-export default {
-    
-}
+  export default {
+    components: {
+      CoreDrawer: () => import('@/components/dashboard/NavDrawer'),
+      CoreFooter: () => import('@/components/dashboard/Footer'),
+      CoreAppBar: () => import('@/components/dashboard/AppBar'),
+      CoreView: () => import('@/components/dashboard/View')
+    }
+  }
 </script>
-
-<style>
-
-</style>
